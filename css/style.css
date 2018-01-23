@@ -24,6 +24,10 @@ h1, h2, h3, h4 {
   letter-spacing: 2px;
 }
 
+img {
+  max-width: 100%;
+}
+
 .heading {
   font-size: 20px;
 }
@@ -82,7 +86,7 @@ hr {
   -webkit-border-radius: 16px 16px 16px 16px;
 }
 
-#biblioteca,#noticias, #pag-noticias, #team, 
+#biblioteca,#noticias, #pag-noticias, #team,
 #imagenes, #pricing, #contacto, #articulo {
   padding-top: 30px;
   padding-bottom: 100px;
@@ -216,7 +220,7 @@ preloader section
   -webkit-animation-delay: -0.1s;
           animation-delay: -0.1s; }
 
-		  
+
 @-webkit-keyframes sk-circleBounceDelay {
   0%, 80%, 100% {
     -webkit-transform: scale(0);
@@ -234,7 +238,7 @@ preloader section
   40% {
     -webkit-transform: scale(1);
             transform: scale(1); } }
-			
+
 
 /* ==========================================================================
 navigation section
@@ -424,7 +428,7 @@ biblioteca/articulo section
 }
 #biblioteca a:hover, #articulo a:hover{
 	color:#3B3B3B;
-} 
+}
 
 /*==========================================================================
 corousel
@@ -867,7 +871,7 @@ footer p {
     #imagenes .col-md-4 {
       width: 33.333%;
     }
-  }    
+  }
 }
 
 /* ==========================================================================
@@ -889,15 +893,15 @@ media quires for mobile
 Navegador (menú lateral)
 =========================================================================== */
 #navegador .vertical-menu a {
-    background-color: #eee; 
+    background-color: #eee;
     color: black;
-    display: block; 
+    display: block;
     padding: 12px;
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 #navegador .vertical-menu a:hover {
-    background-color: #ccc; 
+    background-color: #ccc;
 }
 
 #navegador .vertical-menu a.active {
@@ -916,12 +920,12 @@ Navegador (menú lateral)
 	margin: 0 0 0 0;
 	padding: 0 0 0 0;
  }
- 
+
  .rojo {
 	color:#f13030;
  }
- 
- 
+
+
  /*------------------------------------------------
  MENÚ DESPLEGABLE
  --------------------------------------------------*/
@@ -972,7 +976,7 @@ Navegador (menú lateral)
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
-} 
+}
 
 /*CONF DEL ÁREA DE CARGA*/
 #zona-carga{
@@ -984,17 +988,17 @@ Navegador (menú lateral)
 }
 
 /*descripciones y contenidos*/
-.section-content img{	
+.section-content img{
     margin:25px;
 }
-.content p, .content li{	
+.content p, .content li{
     text-align: left;
 	margin-left:15px;
 }
 
 /* change border radius for the tab , apply corners on top*/
 
-#exTab3 .nav-pills > li > a {  
+#exTab3 .nav-pills > li > a {
   border-radius: 16px 16px 16px 16px;
   -moz-border-radius: 16px 16px 16px 16px;
   -webkit-border-radius: 16px 16px 16px 16px;
@@ -1019,6 +1023,10 @@ Navegador (menú lateral)
 #pdf-portfolio{
   text-align: center;
   margin-bottom: 30px;
+}
+
+#pdf-portfolio .input-group {
+  max-width: 130px;
 }
 
 .portfolioFilter {
@@ -1061,7 +1069,7 @@ Navegador (menú lateral)
 #pdf-portfolio .item {
   margin: 2px;
   width:210px;
-  height: 160px;
+  height: 200px;
   border: 1px solid #ddd;
   border-radius: 4px;
   padding: 5px;
@@ -1098,4 +1106,20 @@ Navegador (menú lateral)
   -webkit-transition-property: -webkit-transform, opacity;
   -moz-transition-property: -moz-transform, opacity;
   transition-property: transform, opacity;
+}
+
+/*----------------------------------------------------------
+                      LABORATORIOS
+-----------------------------------------------------------*/
+#laboratorios img{
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+#laboratorios .caption {
+  width: 100%;
+  text-align: center;
+  color: darkgray;
 }

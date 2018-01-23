@@ -67,7 +67,7 @@
 							<li><a href="javascript:custom.js;" onclick='abrir("laboratorios")'>Laboratorios</a></li>
 							<li><a href="javascript:custom.js;" onclick='abrir("acreditaciones")'>Acreditaciones</a></li>
 							<li><a href="javascript:custom.js;" onclick='abrir("")'>Viviendas</a></li>
-							<li><a href="javascript:custom.js;" onclick='abrir("")'>Carreras</a></li>
+							<li><a href="javascript:custom.js;" onclick='abrir("carreras")'>Carreras</a></li>
 							<li><a href="javascript:custom.js;" onclick='abrir("")'>Direccion</a></li>
 							<li><a href="javascript:custom.js;" onclick='abrir("")'>Inf. General</a></li>
 							<li><a href="javascript:custom.js;" onclick='abrir("")'>Extensión</a></li>

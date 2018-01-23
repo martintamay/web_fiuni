@@ -2,9 +2,9 @@
 // ISOTOPE FILTER
 jQuery(document).ready(function($){
 
-  if ( $('.iso-box-wrapper').length > 0 ) { 
+  if ( $('.iso-box-wrapper').length > 0 ) {
 
-      var $container  = $('.iso-box-wrapper'), 
+      var $container  = $('.iso-box-wrapper'),
         $imgs     = $('.iso-box img');
 
       $container.imagesLoaded(function () {
@@ -26,19 +26,19 @@ jQuery(document).ready(function($){
 
           var $this = $(this), filterValue = $this.attr('data-filter');
 
-      $container.isotope({ 
+      $container.isotope({
         filter: filterValue,
-        animationOptions: { 
-            duration: 750, 
-            easing: 'linear', 
-            queue: false, 
-        }                
-      });             
+        animationOptions: {
+            duration: 750,
+            easing: 'linear',
+            queue: false,
+        }
+      });
 
-      // don't proceed if already selected 
+      // don't proceed if already selected
 
-      if ( $this.hasClass('selected') ) { 
-        return false; 
+      if ( $this.hasClass('selected') ) {
+        return false;
       }
 
       var filter_wrapper = $this.closest('.filter-wrapper');
@@ -46,16 +46,33 @@ jQuery(document).ready(function($){
       $this.addClass('selected');
 
         return false;
-      }); 
+      });
 
   }
 
 });
 
 
+function buscarSemestre(){
+  var selector = $('.portfolioFilter .current').attr('data-filter');
+  var semSelector = $('#semestre').val();
+  if (semSelector!="") {
+    selector += "."+semSelector+"sem";
+  }
+  console.log(selector);
+  $('.portfolioContainer').isotope({
+      filter: selector,
+      animationOptions: {
+          duration: 750,
+          easing: 'linear',
+          queue: false
+      }
+   });
+}
+
 // PRELOADER JS
 $(window).load(function(){
-    $('.preloader').fadeOut(1000); // set duration in brackets    
+    $('.preloader').fadeOut(1000); // set duration in brackets
 
 
     var $container = $('.portfolioContainer');
@@ -68,22 +85,17 @@ $(window).load(function(){
               queue: false
           }
       });
-   
+
       $('.portfolioFilter a').click(function(){
-          $('.portfolioFilter .current').removeClass('current');
-          $(this).addClass('current');
-   
-          var selector = $(this).attr('data-filter');
-          $container.isotope({
-              filter: selector,
-              animationOptions: {
-                  duration: 750,
-                  easing: 'linear',
-                  queue: false
-              }
-           });
-           return false;
-      }); 
+        $('.portfolioFilter .current').removeClass('current');
+        $(this).addClass('current');
+        var selector = $('.portfolioFilter .current').attr('data-filter');
+        if (selector=="*") {
+          $('#semestre').val("");
+        }
+        buscarSemestre();
+        return false;
+      });
       if(document.getElementById("zona-carga")!=null && get_hash()!=""){
         abrir(get_hash().replace("#", ""));
       }
@@ -91,21 +103,22 @@ $(window).load(function(){
     }
 });
 
-
 // jQuery to collapse the navbar on scroll //
 $(window).scroll(function() {
-	if ($(".navbar").offset().top > 50) {
-		$(".navbar-fixed-top").addClass("top-nav-collapse");
-	} else {
-		$(".navbar-fixed-top").removeClass("top-nav-collapse");
-	}
+  if ($(".navbar").length>0) {
+    if ($(".navbar").offset().top > 50) {
+  		$(".navbar-fixed-top").addClass("top-nav-collapse");
+  	} else {
+  		$(".navbar-fixed-top").removeClass("top-nav-collapse");
+  	}
+  }
 });
 
 
-/* HTML document is loaded. DOM is ready. 
+/* HTML document is loaded. DOM is ready.
 -------------------------------------------*/
 $(function(){
-	
+
   // ------- WOW ANIMATED ------ //
   wow = new WOW(
   {
@@ -129,23 +142,23 @@ $(function(){
   $(function(){
     jQuery(document).ready(function() {
 		$('#home').backstretch([
-		   "images/imgfiuni1.jpg", 
-		   "images/imgfiuni2.jpg", 
+		   "images/imgfiuni1.jpg",
+		   "images/imgfiuni2.jpg",
 		   "images/imgfiuni3.jpg",
 		   "images/imgfiuni4.jpg",
 		],  {duration: 3000, fade: 750});
 		$('#cabecera').backstretch([
-		   "../images/imgfiuni1.jpg", 
-		   "../images/imgfiuni2.jpg", 
+		   "../images/imgfiuni1.jpg",
+		   "../images/imgfiuni2.jpg",
 		   "../images/imgfiuni3.jpg",
 		   "../images/imgfiuni4.jpg",
 		],  {duration: 3000, fade: 750});
-	
+
 	});
   })
 
 });
-	  
+
 //Por Martín Tamay
 /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
 function openNav() {
@@ -162,7 +175,7 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 	document.getElementById("nav-superior").style.height = "auto";
    // document.body.style.backgroundColor = "white";
-} 
+}
 
 function abrir(dir){
   set_hash(dir);
@@ -185,4 +198,9 @@ function get_hash(){
 }
 function set_hash(hash){
   window.location.hash = "#"+hash;
+}
+function abrirEnDiv(dir){
+  set_hash(dir);
+  dir = dir+".html";
+  $('#zona-carga').load(dir);
 }

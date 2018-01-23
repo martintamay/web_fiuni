@@ -45,19 +45,16 @@
 		</div>
 
 		<!-- work section -->
-		<section>
+		<section id="laboratorios">
 			<div class="container">
+				<!-- LABORATORIO DE TITULO -->
 				<div class="row">
-					<div class="col-md-12 col-sm-12">
-						<div class="section-title">
-							<h1 class="heading bold rojo">Funciones del Departamento De Ingeniería Aplicada</h1>
-							<hr>
-						</div>
-					</div>
-					<div class="col-md-12 col-sm-12">
-						<div class="section-content">
-							<div class="content">
-								<p>
+					 <div class="panel-group">
+					  <div class="panel panel-default">
+					    <div class="panel-collapse">
+					      <div class="panel-body">
+									<h1>Funciones del Departamento De Ingeniería Aplicada</h1>
+									<hr>
 									<ul>
 										<li>Coordinar las actividades de los laboratorios para su correcto aprovechamiento.</li>
 										<li>Atender a los interesados en becas en general y pasantías en empresas privadas de ingeniería e Instituciones Públicas.</li>
@@ -68,7 +65,7 @@
 										<li>Atender las solicitudes de préstamos de trabajos finales de graduación e instrumentos para la ejecución de los mismos.</li>
 										<li>Coordinar y controlar la fecha de presentación de trabajos finales de graduación.</li>
 									</ul>
-								</p>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -485,7 +482,6 @@
 					</div>
 				</div>
 
-
 				<!-- LABORATORIO DE ELECTRÓNICA -->
 				<div class="row">
 					 <div class="panel-group">
@@ -563,14 +559,14 @@
 									<p>
 										<b>Primeros pasos en la programación del software labview</b><br>
 										La primera prueba realizada con este software fue la adquisición de
-										temperatura y humedad ambiente.
-										<img alt="grafica" src="../images/galerias/labs/imagenelec1.png"></img>
+										temperatura y humedad ambiente.<br>
+										<img alt="grafica" src="../images/galerias/labs/imagenelec1.png"></img></br>
 										En la foto anterior se muestra un prototipo montado un protoboard en
 										el que se ve el micro controlador, con sus respectivas conexiones
 										básicas para su funcionamiento interconectado a un sensor de temperatura
 										y humedad ambiente integrado DHT11, cuya comunicación con el micro
-										controlador es atreves de un bus del tipo IC2.
-										<img alt="grafica" src="../images/galerias/labs/imagenelec2.png"></img>
+										controlador es atreves de un bus del tipo IC2.<br>
+										<img alt="grafica" src="../images/galerias/labs/imagenelec2.png"></img></br>
 										En la foto superior se muestra el módulo de comunicación serie RS 232
 										montado con el circuito integrado MAX232, que es el que comunica al
 										micro controlador con la PC.
@@ -613,15 +609,15 @@
 										controlador, en donde están almacenados los valores de temperatura y
 										humedad que a su vez son leídos y almacenados desde el sensor
 										utilizado.<br>
-										En la foto de abajo se ven la programación en bloques.
-										<img alt="grafica" src="../images/galerias/labs/imagenelec3.png"></img>
+										En la foto de abajo se ven la programación en bloques.<br>
+										<img alt="grafica" src="../images/galerias/labs/imagenelec3.png"></img></br>
 										En la foto de abajo se muestra el panel de control donde se ven  visualizadores
 										analógicos para la humedad y temperatura, como así también un graficador
 										de una de estas variables.<br>
 										Se debe remarcar que estas variables son leídas y mostradas en tiempo real,
 										por el software atreves de la placa de adquisición de datos. Así también
 										dichas lecturas pueden ser grabadas en archivos tipo Excel entre otros formatos.<br>
-										<img alt="grafica" src="../images/galerias/labs/imagenelec4.png"></img>
+										<img alt="grafica" src="../images/galerias/labs/imagenelec4.png"></img></br>
 									</p>
 									<p>
 										<b>Diseño de la placa</b>
@@ -631,10 +627,36 @@
 										de abajo.
 										<div class="row">
 											<div class="col-md-5 col-md-offset-1">
-												<img alt="grafica" src="../images/galerias/labs/imagenelec5.png"></img>
+												<img alt="grafica" src="../images/galerias/labs/imagenelec5.png"></img></br>
 											</div>
 											<div class="col-md-5">
-												<img alt="grafica" src="../images/galerias/labs/imagenelec6.png"></img>
+												<img alt="grafica" src="../images/galerias/labs/imagenelec6.png"></img></br>
+											</div>
+										</div>
+										En el diagrama superior se muestra la interfaz de 4 entradas digitales aislada
+										con opto acopladores como protección .También, en detalle, la interconexión con
+										el micro controlador.<br>
+										Se realizaron las simulaciones de todos estos diseños con dicho software
+										obteniéndose resultados satisfactorios pero no fiables completamente, por
+										tal motivo se montan todos los componentes principales en un protoboard
+										para su posterior prueba. En la foto de abajo observamos dicho montaje.<br>
+										<img alt="grafica" src="../images/galerias/labs/imagenelec7.png"></img></br>
+										Los resultados de la simulación fueron muy satisfactorios, por lo tanto
+										se siguió adelante con la fabricación de la placa principal.
+									</p>
+									<p>
+										<b>Prototipo de la placa</b><br>
+										Abajo se muestra el diseño final de la placa del circuito impreso.<br>
+										<img alt="grafica" src="../images/galerias/labs/imagenelec12.png"></img><br>
+										Abajo se muestra la simulación del diseño prototipo.<br>
+										<img alt="grafica" src="../images/galerias/labs/imagenelec9.png"></img></br>
+										Actualmente el proyecto se encuentra en fase de montaje del circuito impreso, como se muestra en la foto de abajo<br>
+										<div class="row">
+											<div class="col-md-5 col-md-offset-1">
+												<img alt="grafica" src="../images/galerias/labs/imagenelec10.png"></img></br>
+											</div>
+											<div class="col-md-5">
+												<img alt="grafica" src="../images/galerias/labs/imagenelec11.png"></img></br>
 											</div>
 										</div>
 									</p>
@@ -644,7 +666,126 @@
 					</div>
 				</div>
 
+				<!-- LABORATORIO DE ENERGÍAS RENOVABLES -->
+				<div class="row">
+					 <div class="panel-group">
+					  <div class="panel panel-default">
+					    <div class="panel-collapse">
+					      <div class="panel-body">
+									<h2>LABORATORIO DE ENERGÍAS RENOVABLES</h2>
+									<h3>Ingeniería Electromecánica</h3>
+									<p>
+										En el 2004 se iniciaron los primeros trabajos, relacionados a temas de energías
+										renovables, específicamente el tema del Biodiesel, que en esos años tuvo un auge
+										importante. El precursor fue el Prof. Ing. Jorge Kurita, quien desarrolló el proyecto
+										como un trabajo de curso con alumnos de los últimos años de la carrera. El trabajo
+										consistía en la construcción de los equipos para la elaboración de biodiesel que
+										paulatinamente fue mejorándose en los años posteriores. <br>
+										En el año 2006 fueron adquiridos los equipos para el control de calidad del
+										biodiesel con un aporte económico importante de la Entidad Binacional Yacyretá.
+										Contando con la planta piloto de producción y los equipos y elementos básicos para la
+										medición de parámetros importantes del biodiesel, se conformó el laboratorio. <br>
+										Se realizaron trabajos de elaboración de biodiesel a escala piloto de oleaginosas
+										de distintas variedades, además de grasa vacuna, controlando los parámetros de calidad
+										factibles de realizar con los equipos estándar. Se realizaron asesoramiento a distintos
+										interesados en la elaboración del combustible, se dictaron conferencias a nivel nacional
+										e internacional sobre los trabajos realizados en el laboratorio. También se realizó un
+										trabajo final de grado utilizando como base la planta piloto de elaboración de biodiesel. <br>
+										El laboratorio de Energías Renovables tiene como objetivo principal facilitar el
+										estudio de recursos energéticos renovables, como los biocombustibles, y la energía
+										solar. Eventualmente, cuando se disponga de más equipos, asistirá al estudio de otras
+										energías renovables.
+									</p>
+									<h3>Objetivos Específicos</h3>
+									<ul>
+										<li>
+											Permitir la elaboración de biodiesel e identificar las partes que comprenden una
+											planta de producción por lotes.
+										</li>
+										<li>
+											Realizar mediciones de características físicas y químicas de biocombustibles,
+											utilizando los equipos estándar disponibles.
+										</li>
+										<li>
+											Conocer las tecnologías básicas que se utilizan actualmente en el
+											aprovechamiento de la energía solar.
+										</li>
+										<li>
+											Permitir un ambiente favorable, para realizar estudios de eficiencia energética.
+										</li>
+										<li>
+											Aumentar el interés en las energías renovables.
+										</li>
+									</ul>
+									<h3>Encargados de Laboratorio</h3>
+									<p>
+								    Ing. Carlos Balletbó Arapayú.<br>
+								    Ing. Waldy Anibal Riveros Saavedra.<br>
+								    Email: warsaavedra@gmail.com<br>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 
+				<!-- LABORATORIO DE INFORMÁTICA -->
+				<div class="row">
+					 <div class="panel-group">
+					  <div class="panel panel-default">
+					    <div class="panel-collapse">
+					      <div class="panel-body">
+									<h2>LABORATORIO DE INFORMÁTICA<h2>
+									<h3>Laboratorio informático de FIUNI facilita enseñanza de calidad</h3>
+									<p>
+										Recientemente, la Universidad Nacional de Itapúa (UNI) inauguró las mejoras
+										del Laboratorio de Informática en la Facultad de Ingeniería (FIUNI).
+									</p>
+									<img alt="grafica" src="../images/galerias/labs/labinfor.jpg"></img>
+									<p>
+										El laboratorio cuenta con importantes innovaciones tecnológicas; herramientas
+										informáticas  instaladas en medio de unas infraestructuras diseñadas para alcanzar
+										con efectividad los fines académicos y los desafíos de la investigación científica.
+									</p>
+
+									<p>
+										<b>Espacio físico</b><br>
+										Según datos brindados por el Departamento de Planificación del Rectorado, el
+										área remozada presenta importantes mejoras: Colocación de pisos cerámicos,
+										instalación de un sistema eléctrico y audiovisual acorde a los requerimientos
+										técnicos, instalación de nuevos sistemas de cable canal de conexiones informáticas
+										que logra la conexión en  redes por cada computadora; instalación de mamparas
+										de yeso con vidriado para una cabina de control, instalación estratégica del
+										sistema lumínico, pintura, cortinados e instalación de un nuevo cielorraso y aberturas.
+									</p>
+
+									<p>
+										<b>Recursos humanos</b><br>
+										El Decano de la Facultad, Prof. Ing. Oscar Trochez, cuenta con un grupo humano de
+										profesionales técnicos que administran este servicio institucional, presidido por
+										la Directora de la Carrera de Ingeniería en Informática, Prof. Dra. Nieves Florentín,
+										acompañada por funcionarios técnicos encargados de su óptimo funcionamiento; Mario Ozuna,
+										Casildo Medina y Denis Acuña.
+									</p>
+									<p>
+										<b>Servicios</b><br>
+										Este laboratorio, con 30 computadoras, dispone de internet con fibra óptica
+										(9 MB de velocidad),  permite el desarrollo de clases ordinarias  de grado y
+										posgrados en una sala amplia y confortable, habilita un servidor de archivo para
+										canalizar contenidos de programas curriculares, tutoriales, libros en formato
+										digital, acceso a sitios web y bibliotecas virtuales,  artículos científicos,
+										entre otras funciones esenciales para la “enseñanza- aprendizaje” y trabajos
+										de investigación.
+									</p>
+									<p>
+										Funciona de lunes a viernes de 07:00 a 21:00, no solo para el área académica,
+										sino también para los sectores de interés común y público en general.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
 
