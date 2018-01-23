@@ -43,11 +43,11 @@
 			   <div class="sk-circle12 sk-circle"></div>
 			</div>
 		</div>
-		
+
 		<!-- work section -->
-		<section id="biblioteca">
+		<section>
 			<div class="container">
-				<div class="row">					
+				<div class="row">
 					<div class="col-md-12 col-sm-12">
 						<div class="section-title">
 							<h1 class="heading bold rojo">Funciones del Departamento De Ingeniería Aplicada</h1>
@@ -68,109 +68,583 @@
 										<li>Atender las solicitudes de préstamos de trabajos finales de graduación e instrumentos para la ejecución de los mismos.</li>
 										<li>Coordinar y controlar la fecha de presentación de trabajos finales de graduación.</li>
 									</ul>
-								</p>			
+								</p>
 							</div>
 						</div>
-					</div>					
+					</div>
 				</div>
+
+				<!-- LABORATORIO DE AUTOMATIZACIÓN -->
 				<div class="row">
 					 <div class="panel-group">
 					  <div class="panel panel-default">
-					    <div class="panel-heading">
-					      <h4 class="panel-title">
-					        <a data-toggle="collapse" href="#lab_automatizacion" onclick="redimensionarZonaCarga();">LABORATORIO DE AUTOMATIZACIÓN</a>
-					      </h4>
-					    </div>
-					    <div id="lab_automatizacion" class="panel-collapse collapse">
+					    <div class="panel-collapse">
 					      <div class="panel-body">
-							<div class="section-content content">
-								<p>													
-									La FIUNI cuenta con un Laboratorio de Automatización equipado para desarrollo de clases y proyectos, 
-									en el mismo se desarrollan cursos de Programación de PLC LOGO y S7200 y Programación con distintos 
-									tipos de lenguajes para PLC FUYI para los alumnos de la Facultad.<br>
-									<b>Son Docentes encargados:</b><br>
-									Ing. Masao Tachibana<br>
-									Univ. David Valenzuela<br>
-									<b>Horario de Atención:</b><br>
-									7:00-11:00 HS<br>
-									14:00_18:00 HS<br>
-								</p>
-								<hr>
-								<div class="col-md-12 col-sm-12">
-									<div class="section-title">
-										<h1 class="heading bold">PROYECTO: CONTROL DE POSICIÓN DE UN PROYECTOR</h1>
-									</div>
-								</div>
-								<p>
-									<b>Prof. Ing. Masao Tachibana<br>
-									Univ. David Valenzuela<br>
-									OBJETIVO:</b><br>
-									Diseñar y construir  un sistema para controlar  la posición de un proyector.<br>
-									<b>PRINCIPIO DE FUNCIONAMIENTO:</b><br>
+						      <h2>LABORATORIO DE AUTOMATIZACIÓN</h2>
+									<p>
+										La FIUNI cuenta con un Laboratorio de Automatización equipado para desarrollo de clases y proyectos,
+										en el mismo se desarrollan cursos de Programación de PLC LOGO y S7200 y Programación con distintos
+										tipos de lenguajes para PLC FUYI para los alumnos de la Facultad.<br>
+										<b>Son Docentes encargados:</b><br>
+										Ing. Masao Tachibana<br>
+										Univ. David Valenzuela<br>
+										<b>Horario de Atención:</b><br>
+										7:00-11:00 HS<br>
+										14:00_18:00 HS<br>
+									</p>
+									<hr>
+									<h3 class="heading bold">PROYECTO: CONTROL DE POSICIÓN DE UN PROYECTOR</h3>
+									<p>
+										<b>Prof. Ing. Masao Tachibana<br>
+										Univ. David Valenzuela<br>
+										OBJETIVO:</b><br>
+										Diseñar y construir  un sistema para controlar  la posición de un proyector.<br>
+										<b>PRINCIPIO DE FUNCIONAMIENTO:</b><br>
 
 
-									El sistema consiste en un elevador accionado por un sistema de poleas con contrapeso y finales de 
-									carrera para indicar su posición, éste es movido por un motor de CC de 12V y un mecanismo giratorio, 
-									movido por un motor paso a paso, ambos  controlados por un microcontrolador PIC 16F84A respectivamente.<br>
+										El sistema consiste en un elevador accionado por un sistema de poleas con contrapeso y finales de
+										carrera para indicar su posición, éste es movido por un motor de CC de 12V y un mecanismo giratorio,
+										movido por un motor paso a paso, ambos  controlados por un microcontrolador PIC 16F84A respectivamente.<br>
 
-									<b>MATERIALES UTILIZADOS</b><br>
-								</p>
-									<ul>
-										<li>Motor de CC 12V</li>
-										<li>Motor Pasó a Pasó</li>
-										<li>Opto acoplador.</li>
-										<li>Transistor TIP 41C.</li>
-										<li>Regulador de tensión 7824</li>
-										<li>Regulador de tensión 7805</li>
-										<li>Resistencia de 330Ω,1.2kΩ,47kΩ,10kΩ</li>
-										<li>Diodos</li>
-										<li>Capacitores</li>
-										<li>Relés</li>
-										<li>Micro controlador</li>
-										<li>Osciladores</li>
-										<li>Zócalos</li>
-										<li>Borneras</li>
-										<li>Fin de carrera</li>
-										<li>Poleas</li>
-										<li>Fuente de poder 24 Vdc 5 A</li>
-										<li>Fuente de poder 12 Vdc</li>
-									</ul>
-								<p>			
-									El motor de CC que utilizamos es de 12 V cuya potencia es de 30W<br>
-									El motor paso a paso que tenemos disponible en el laboratorio es un motor PM55L unipolar 24[V] y 30[Ohm] 
-									de resistencia por cada bobina, el consumo de corriente del motor en bloqueo estático (bloquear el motor 
-									en una posición determinada) es de 800 mA esta corriente va disminuyendo a medida que se aumenta la 
-									velocidad en pasos por minuto (ppm); el torque es más o menos proporcional a la corriente siendo el 
-									máximo en estado de bloqueo cuya curva característica se representa en la <b>Fig1</b>. El motor puede permanecer 
-									en estado de bloque hasta durante 1 minuto antes que su temperatura alcance valores peligrosos.<br>
-									<img src="http://fiuni.edu.py/img/figura1.jpg" alt="fig1"></img><b>Fig1</b><br>
-									
-									Básicamente estos motores están constituidos normalmente por un rotor sobre el que van aplicados distintos 
-									imanes permanentes y por un cierto número de bobinas excitadoras bobinadas en su estator. Las bobinas son 
-									parte del estator y el rotor es un imán permanente. Toda la conmutación (o excitación de las bobinas) 
-									deber ser externamente manejada por un controlador.<br>
-									<img src="http://fiuni.edu.py/img/4bobinas.jpg" alt="Imagen de un estator de 4 bobinas"></img><b>Imagen de un estator de 4 bobinas</b><br>
-									
-									<b>DESCRIPCIÓN</b><br>
-									Este proyecto se realizó a pedido del Departamento de Informática con el objetivo de poder controlar 
-									un proyector (subir o bajar 70 cm y hacer girar el mismo 90o exactos) para la sala del Rectorado.<br>
-									La misma se realizó con la valiosa colaboración del Laboratorio de Electrónica, el Ing. Ramón Sosa y el 
-									Univ. Ariel García, así también del Univ. Javier Ojeda, quienes nos asesoraron en el diseño y construcción 
-									del  circuito electrónico<br>
-									
-									<b>EL DISPOSITIVO TIENE DOS PARTES:</b><br>
-									Estructura mecánica Sistema eléctrico y electrónico. <br>
-									
-									<b>EVALUACIÓN Y CONCLUSIÓN</b><br>
-									Este tipo de acciones permite optimizar los recursos humanos con que cuenta la universidad, demostrando 
-									un trabajo en equipo y llevando adelante proyectos únicos en la región. <br>
-								</p>
-							</div>
+										<b>MATERIALES UTILIZADOS</b><br>
+									</p>
+										<ul>
+											<li>Motor de CC 12V</li>
+											<li>Motor Pasó a Pasó</li>
+											<li>Opto acoplador.</li>
+											<li>Transistor TIP 41C.</li>
+											<li>Regulador de tensión 7824</li>
+											<li>Regulador de tensión 7805</li>
+											<li>Resistencia de 330Ω,1.2kΩ,47kΩ,10kΩ</li>
+											<li>Diodos</li>
+											<li>Capacitores</li>
+											<li>Relés</li>
+											<li>Micro controlador</li>
+											<li>Osciladores</li>
+											<li>Zócalos</li>
+											<li>Borneras</li>
+											<li>Fin de carrera</li>
+											<li>Poleas</li>
+											<li>Fuente de poder 24 Vdc 5 A</li>
+											<li>Fuente de poder 12 Vdc</li>
+										</ul>
+									<p>
+										El motor de CC que utilizamos es de 12 V cuya potencia es de 30W<br>
+										El motor paso a paso que tenemos disponible en el laboratorio es un motor PM55L unipolar 24[V] y 30[Ohm]
+										de resistencia por cada bobina, el consumo de corriente del motor en bloqueo estático (bloquear el motor
+										en una posición determinada) es de 800 mA esta corriente va disminuyendo a medida que se aumenta la
+										velocidad en pasos por minuto (ppm); el torque es más o menos proporcional a la corriente siendo el
+										máximo en estado de bloqueo cuya curva característica se representa en la <b>Fig1</b>. El motor puede permanecer
+										en estado de bloque hasta durante 1 minuto antes que su temperatura alcance valores peligrosos.<br>
+										<img src="http://fiuni.edu.py/img/figura1.jpg" alt="fig1"></img>
+						        <div class="caption">
+						          <p><b>Fig1</b></p>
+						        </div>
+
+										Básicamente estos motores están constituidos normalmente por un rotor sobre el que van aplicados distintos
+										imanes permanentes y por un cierto número de bobinas excitadoras bobinadas en su estator. Las bobinas son
+										parte del estator y el rotor es un imán permanente. Toda la conmutación (o excitación de las bobinas)
+										deber ser externamente manejada por un controlador.<br>
+										<img src="http://fiuni.edu.py/img/4bobinas.jpg" alt="Imagen de un estator de 4 bobinas"></img>
+										<div class="caption">
+											<p><b>Imagen de un estator de 4 bobinas</b></p>
+										</div>
+
+										<b>DESCRIPCIÓN</b><br>
+										Este proyecto se realizó a pedido del Departamento de Informática con el objetivo de poder controlar
+										un proyector (subir o bajar 70 cm y hacer girar el mismo 90o exactos) para la sala del Rectorado.<br>
+										La misma se realizó con la valiosa colaboración del Laboratorio de Electrónica, el Ing. Ramón Sosa y el
+										Univ. Ariel García, así también del Univ. Javier Ojeda, quienes nos asesoraron en el diseño y construcción
+										del  circuito electrónico<br>
+
+										<b>EL DISPOSITIVO TIENE DOS PARTES:</b><br>
+										Estructura mecánica Sistema eléctrico y electrónico. <br>
+
+										<b>EVALUACIÓN Y CONCLUSIÓN</b><br>
+										Este tipo de acciones permite optimizar los recursos humanos con que cuenta la universidad, demostrando
+										un trabajo en equipo y llevando adelante proyectos únicos en la región. <br>
+									</p>
 					      </div>
 					    </div>
 					  </div>
 					</div>
 				</div>
+
+				<!-- LABORATORIO DE HIDRÁULICA Y SANEAMIENTO -->
+				<div class="row">
+					 <div class="panel-group">
+					  <div class="panel panel-default">
+					    <div class="panel-collapse">
+					      <div class="panel-body">
+									<h2>LABORATORIO DE HIDRÁULICA Y SANEAMIENTO</h2>
+									<h3>Sección de Saneamiento y Análisis de agua de diferentes lugares</h3>
+									<p>
+										<b>Investigación acerca de la calidad del Río Paraná</b><br>
+										Mensualmente se toman muestras de agua de 5 puntos del Río Paraná y estos se
+										analizan en el laboratorio. Ya contamos con datos de 2 años.
+									</p>
+									<p>
+										<b>Investigación acerca de la calidad de agua de río de otras zonas</b><br>
+										en la medida de las posibilidades, cuando se nos es posible, tomamos muestras
+										agua de otros recursos hídricos para ver en qué condiciones se encuentra y
+										compararlo además con nuestro río.
+									</p>
+									<p>
+										<b>Investigación acerca del río Paraguay y la Bahía de Asunción</b><br>
+										Se cuenta con datos de ambos lugares desde hace un año, esto ya no se puede
+										realizar con la periocidad de antes, pero sacamos las muestras cuando es
+										posible.
+									</p>
+									<p>
+										<b>Investigación acerca de la calidad de agua potable de la Zona</b><br>
+										Analizamos diferentes muestras de agua potable, las que cuentan con cloración
+										y las que no, así como de pozo artesiano, manantial y las que son por redes
+										de destrucción de la ESSAP.
+									</p>
+									<p>
+										<b>Comparación entre Encarnación-Asunción</b><br>
+										Hemos comparado la situación del Río Paraná-Río Paraguay y el agua potable de
+										la ESSAP de ambos lugares. Y con los datos que tenemos actualmente, seguimos
+										comparando para ver si ha variado o se mantiene constante es diferencia.
+									</p>
+
+									<h3>Análisis del método de Lodo Activo</h3>
+									<p>
+										Se busca la óptima condición para tratar efluentes con material orgánico, se
+										ha analizado con concentraciones de leche debido a que se pretende que este
+										sistema sea implementado en las fábricas y en la zona hay varias fábricas
+										lácteas. <br>
+										Actualmente estamos buscando las mejores condiciones para un efluente con
+										efluente preparado a base de salsa de soja, debido a que existe la posibilidad
+										de probar el resultado con efluente de fábrica real.
+									</p>
+
+									<h3>Tratamiento de material Inorgánico con resinas iónicas</h3>
+									<p>
+										Se busca la óptima condición para tratar un efluente específico y se busca
+										también determinar la curva de eficiencia de la regeneración de las resinas.<br>
+										Las resinas son materiales que al ser atravesados por iones, estos se adhieren
+										a ellas y las saturan, en el laboratorio las regeneramos y debemos determinar
+										hasta cuantas veces se pueden regenerar porque en cada regeneración va perdiendo
+										ligeramente su efectividad de trabajo.
+									</p>
+
+									<h3>Tratamiento de efluentes del laboratorio</h3>
+									<p>
+										Los efluentes del laboratorio son almacenados en recipientes para el tratamiento
+										previo antes de desecharlos. Debido a que se conoce exactamente con que elementos
+										inorgánicos está compuesto nuestro efluente es posible realizar los tratamientos
+										para no afectar el ambiente al desecharlo.
+									</p>
+
+									<h3>Sección de hidráulica</h3>
+									<p>
+										<b>Cálculo volumétrico del caudal</b><br>
+										Mediante el Banco hidráulico se toman las medidas del caudal, de forma
+										experimental, se van anotando los resultados y se comparan con la formula
+									</p>
+									<p>
+										<b>Banco de pruebas de caudal</b><br>
+										Este equipo se utiliza para determinar el caudal de diferentes presiones
+										de agua, así mismo el alumno aprende a calibrar los instrumentos.<br>
+										Con él se pueden realizar los siguientes ensayos: Calibración de equipos;
+										Determinación del Caudal; Determinación de presión.<br>
+										Este equipo no se encuentra en funcionamiento dado que se precisan una balanza,
+										un canal para desagüe, y un tanque elevado.
+									</p>
+									<p>
+										<b>Banco de prueba de bombas</b><br>
+										Este equipo consta de un tanque de 200 litros, dos bombas de 0,5 Hp, y un tanque
+										hidroneumático de más de dos manómetros, y dos vacuometros.<br>
+										En el banco de pruebas se vienen realizando ensayos de: Medidas de presión;
+										Bombas centrifugas; Bombas en Serie; Bombas en Paralelo; Perdidas primarias y
+										secundarias; Determinación del punto de trabajo de la bomba.
+									</p>
+									<p>
+										<b>Turbinas Pelton</b><br>
+										Este equipo puede brindar servicios esenciales para la realización de ensayos,
+										dado que provee una reserva de agua y una bomba para alimentar los accesorios
+										con un caudal de agua controlado; y permite calcular con el método volumétrico
+										el caudal de agua utilizado en los ensayos y también permite medir el flujo de
+										agua utilizando el caudalimetro.
+									</p>
+									<p>
+										<b>Centro de presiones</b><br>
+										Este módulo permite determinar el empuje hidrostático ejercido por un líquido
+										sobre la superficie sumergida y está constituido por un recipiente en el cual
+										se encuentra un cuerpo en forma toroidal montado en el brazo de una balanza.
+									</p>
+									<p>
+										<b>Vertederos</b><br>
+										Este módulo permite evaluar las características de flujo en vertederos con
+										diferentes formas.<br>
+										Esta constituido de 4 elementos de contención que se  colocan en las extremidades
+										del canal abierto del banco hidráulico.<br>
+										El agua es introducida en el canal través de un distribuidor para reducir las
+										turbulencias y permitir un flujo más regular.
+									</p>
+
+									<h3>Información pertinente de datos de las encargadas</h3>
+									<p>
+										<b>Encargada del Laboratorio</b><br>
+										<u>Nombre:</u> Lourdes Rossana Ortiz Garay<br>
+										<u>Profesión:</u> Ingeniera Electromecánica<br>
+										<u>Correo:</u> ingrossyortiz@hotmail.com<br>
+
+										<b>Asistente del laboratorio</b><br>
+								    <u>Nombre:</u> Yanina Soledad Ayala<br>
+								    <u>Profesión:</u> Estudiante de Ingeniería Civil<br>
+								    <u>Correo:</u> ysa.zxc@gmail.com<br>
+
+										<b>Datos del laboratorio</b><br>
+								    <u>Horario:</u> Lunes a viernes de 07:30hs. a 11:00hs.<br>
+								    <u>Correo:</u> lhs.fiuni@gmail.com<br>
+								    <u>Interno:</u> 113<br>
+									</p>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+				</div>
+
+				<!-- LABORATORIO DE TERMOTECNIA Y MECÁNICA -->
+				<div class="row">
+					 <div class="panel-group">
+					  <div class="panel panel-default">
+					    <div class="panel-collapse">
+					      <div class="panel-body">
+									<h2>LABORATORIO DE TERMOTECNIA Y MECÁNICA</h2>
+									<p>
+										El laboratorio de Termotecnia asiste principalmente a las materias de
+										Transferencia de Calor, Máquinas Térmicas y Refrigeración Industrial,
+										aunque también puede utilizarse para el estudio de la Dinámica y los
+										elementos de máquinas.<br>
+										Su objetivo principal es aumentar el grado de compresión de los fenómenos
+										térmicos que ocurren en las máquinas que transforman la energía calorífica
+										en energía mecánica y/o eléctrica y también del funcionamiento de los
+										equipos que realizan dichas transformaciones. Estos equipos representan
+										de manera general dispositivos de uso cotidiano en el transporte, la
+										industria, la calefacción, la refrigeración y la generación de energía
+										eléctrica en centrales térmicas.<br>
+									</p>
+									<h3>Objetivos Específicos</h3>
+									<ul>
+										<li>
+											Identificar las partes principales y auxiliares que comprenden las plantas
+											generadoras de energía eléctrica con la transformación de energía térmica; de
+											los motores de combustión interna, y de los equipos de refrigeración.
+										</li>
+										<li>
+											Analizar los ciclos térmicos ideales y reales que ocurren en los diferentes
+											equipos siguiendo el funcionamiento o los movimientos de los elementos que
+											componen los mismos.
+										</li>
+										<li>
+											Realizar mediciones de parámetros físicos para calcular potencias, consumos de
+											combustible, rendimientos y otras magnitudes importantes; aplicando las
+											ecuaciones de transferencia de calor, máquinas térmicas y mecánicas.
+										</li>
+										<li>
+											Comprender el funcionamiento de motores de combustión interna mediante la
+											observación de sus partes principales y el movimiento de sus elementos.
+										</li>
+										<li>
+											Estimular el trabajo en grupo y el interés en las materias relacionadas con el
+											diseño, construcción y mantenimiento de los equipos, utilizando materiales
+											reciclados o de bajo costo.
+										</li>
+										<li>
+											Familiarizarse con el uso de herramientas mecánicas en la construcción y
+											mantenimiento de equipos térmicos.
+										</li>
+										<li>
+											Desarrollar equipos e investigar las nuevas aplicaciones en la ingeniería térmica
+											y mecánica, con miras a aumentar la eficiencia energética y la conciencia
+											ecológica.
+										</li>
+									</ul>
+									<h3>Encargados</h3>
+									<p>
+										Ing. Eugenio José Cano.<br>
+										Ing. Waldy Anibal Riveros Saavedra.<br>
+										Email: warsaavedra@gmail.com
+									</p>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+				</div>
+
+				<!-- Laboratorio de Electrótecnia -->
+				<div class="row">
+					 <div class="panel-group">
+					  <div class="panel panel-default">
+					    <div class="panel-collapse">
+					      <div class="panel-body">
+									<h2>Laboratorio de Electrótecnia</h2>
+									<h3>Las actividades del Laboratorio de Electrótecnia y Neumática</h3>
+									<p>
+										Clase teórica sobre introducción a las instalaciones eléctricas domiciliarias,
+										dictado para los alumnos del 8° semestre, por el Prof. Lic. Ángel Centurión, en
+										la materia de Instalaciones eléctricas.
+									</p>
+									<p>
+										Instalación de un medidor trifásico con su interruptor limitadora de carga y
+										llaves termo magnéticas, por los alumnos del 8° semestre, a cargo del Prof. Lic.
+										Ángel Centurión, en la materia de Instalaciones eléctricas.
+									</p>
+									<p>
+										Clase teórica sobre introducción a los métodos de arranque a tensión reducida de
+										los motores de inducción, dictado para los alumnos del 8° semestre, por el Prof.
+										Lic. Ángel Centurión, en la materia de Instalaciones eléctricas.
+									</p>
+									<p>
+										Medición de los diferentes parámetros de un motor asíncrono trifásico en vacío,
+										realizado por los alumnos del 8º semestre en la materia Máquinas Eléctricas II,
+										a cargo del Prof. Ing. Domingo Talavera.
+									</p>
+									<p>
+										Arranque directo de motor trifásico de Inducción, realizado por los alumnos del
+										8º semestre en la materia de Instalaciones Eléctricas, a cargo del Lic. Ángel
+										Centurión.
+									</p>
+									<p>
+										Ensayo de medición de resistencia de bobinados de un motor asíncrono trifásico,
+										realizado por  los alumnos del 8º semestre en la materia Máquinas Eléctricas II,
+										a cargo del Prof. Ing. Domingo Talavera.
+									</p>
+									<p>
+										Ensayo de arranque directo con inversión de giro de motor trifásico de Inducción,
+										realizado por los alumnos del 8º semestre, en la materia de Instalaciones Eléctricas
+										a cargo del Lic. Ángel Centurión.
+									</p>
+									<p>
+										Ensayo de medición de potencia de un motor asíncrono trifásico en vacío, realizado
+										por  los alumnos del 8º semestre en la materia Máquinas Eléctricas II, a cargo del
+										Prof. Ing. Domingo Talavera.
+									</p>
+									<p>
+										Fabricación de dos bancadas metálicas para montaje de los kits de electrotecnia
+										adquiridos, dichas actividades fueron realizados por los laboratoristas y miembro del
+										departamento de mantenimiento de la FIUNI.
+									</p>
+									<p>
+										Ensayo de Arranque estrella - triángulo de motor trifásico de Inducción, realizado
+										por los alumnos del 8º semestre en la materia de Instalaciones Eléctricas, a cargo
+										del Lic. Ángel Centurión.
+									</p>
+									<p>
+										Ensayo de medición de potencia de un motor asíncrono trifásico con rotor bloqueado,
+										realizado por los alumnos del 8º semestre en la materia Máquinas Eléctricas II, a
+										cargo del Prof. Ing. Domingo Talavera.
+									</p>
+									<p>
+										Ensayo de Arranque estrella - triángulo con inversión giro de motor trifásico de
+										Inducción, realizado por los alumnos del 8º semestre en la materia de Instalaciones
+										Eléctricas, a cargo del Lic. Ángel Centurión.
+									</p>
+									<p>
+										Ensayo de arranque compensado de motor trifásico de Inducción con autotransformador,
+										realizado por los alumnos del 8º semestre en la materia de Instalaciones Eléctricas,
+										a cargo del Lic. Ángel Centurión.
+									</p>
+									<p>
+										Todas estas actividades son acompañadas por los Laboratoristas desde la preparación
+										de los ensayos, la ejecución de la misma y recepción de los informes de los alumnos.
+									</p>
+									<h3>Encargados del laboratorio</h3>
+									<p>
+										<b>Encargado del Laboratorio:</b> Ing. Francisco Fernando Velázquez Santacruz<br>
+										<b>Horario de trabajo:</b> 15:00 a 20:00 hs<br>
+										<b>Auxiliar de Laboratorio:</b> Ing. Hugo Daniel González Arrúa<br>
+										<b>Horario de trabajo:</b> 16:00 a 20:00 hs
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- LABORATORIO DE FÍSICA -->
+				<div class="row">
+					 <div class="panel-group">
+					  <div class="panel panel-default">
+					    <div class="panel-collapse">
+					      <div class="panel-body">
+									<h2>LABORATORIO DE FÍSICA</h2>
+									<h3>Equipo fabricado en el laboratorio para el estudio de interferencias de ondas de sonido</h3>
+									<img src="../images/galerias/labs/fisica1.png" alt="Equipo física"></img>
+
+									<h3>Alumnos del 3er semestre realizando prácticas de laboratorio</h3>
+									<img src="../images/galerias/labs/fisica2.png" alt="Alumnos En Clase"></img>
+									<img src="../images/galerias/labs/fisica3.png" alt="Alumnos En Clase"></img>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<!-- LABORATORIO DE ELECTRÓNICA -->
+				<div class="row">
+					 <div class="panel-group">
+					  <div class="panel panel-default">
+					    <div class="panel-collapse">
+					      <div class="panel-body">
+									<h2>LABORATORIO DE ELECTRÓNICA</h2>
+									<p>
+										<b>Proyecto:</b> Tarjeta de adquisición de datos.
+									</p>
+									<p>
+										<b>Objetivo:</b><br>
+										Diseño y construcción de una tarjeta de adquisición de datos controlada
+										desde una PC a través del programa LabVIEW.
+									</p>
+									<h3>Introducción a los Sistemas de Asquisición</h3>
+									<p>
+										El esquema general de una cadena de medida cuya misión es la adquisición de
+										datos puede ser el siguiente:
+									</p>
+									<img alt="grafica" src="../images/galerias/labs/imagenelec.gif"></img>
+									<p>
+										En un entorno de laboratorio, la tendencia actual es que sea un software
+										especializado quien se encargue del control del sistema, coordinando el
+										funcionamiento de los distintos elementos. Uno de estos programas software
+										es LabVIEW de la multinacional National Instruments. LabVIEW permite recoger,
+										analizar y monitorizar los datos dentro de un entorno de programación gráfico
+										en el que se ensamblan objetos llamados instrumentos virtuales (Vis) para
+										formar el programa de aplicación con el que interactuará el usuario y que
+										se denomina instrumento virtual. Además de lo que es la propia representación
+										de los datos en los paneles interactivos que funcionan como si se tratara de
+										instrumentación real, permite múltiples opciones de manejo de datos, como su
+										almacenamiento en disco y compartirlos en red o con otras aplicaciones. La
+										interacción con otras aplicaciones se podrá realizar mediante llamadas a
+										librerías de enlace dinámico (DLL: Dynamic Link Library) e intercambio
+										dinámico de datos (DDE: Dynamic Data Exchange) en modo local o mediante
+										TCP/IP en conexiones remotas. Siempre buscando independencia de la
+										plataforma en la que hayamos realizado nuestra aplicación. La capacidad
+										de comunicación con otros sistemas será una cualidad importante en
+										cualquier equipo ó sistema. Además de la comunicación mediante interfaces
+										comunes como el RS-232 o 485, podremos utilizar otros estándares más
+										específicos de instrumentación como el IEEE-488 más conocido como GPIB,
+										el VXI o en entornos industriales más específicos el CAN.
+									</p>
+									<p>
+										<b>Diseño de placa de adquisición:</b><br>
+										La placa de adquisición de datos será diseñada y montada íntegramente
+										dentro del laboratorio de Electrónica de la facultad de Ingeniería.<br>
+										Paralelamente se estudiara la programación del software LabVIEW 2012,
+										que es el que estará interconectada a la placa de adquisición de datos.
+									</p>
+									<p>
+										<b>Criterios seleccionados para el diseño de la placa son:</b>
+										<ul>
+											<li>6 canales de entrada analógicos.</li>
+											<li>8 canales de entradas digitales.</li>
+											<li>8 canales de salidas digitales.</li>
+											<li>Comunicación serie con la pc.</li>
+											<li>Comunicación I2C para periféricos especiales como son los sensores
+												de temperatura, humedad, presión, memorias externas y otros.</li>
+											<li>Contador de pulsos, temporizador, pwm</li>
+										</ul>
+										<p>
+											Como procesador central se utilizara el PIC 16F877A de Microchip.
+											Tendrá comunicación serie RS 232 a la PC por medio del circuito
+											integrado MAX 232.
+										</p>
+										<p>
+											Se debe aclarar que estos criterios son seleccionados para este
+											prototipo, por lo tanto de acuerdo a las futuras pruebas y a las
+											necesidades de las aplicaciones, el mismo será modificado.
+										</p>
+									</p>
+
+									<p>
+										<b>Primeros pasos en la programación del software labview</b><br>
+										La primera prueba realizada con este software fue la adquisición de
+										temperatura y humedad ambiente.
+										<img alt="grafica" src="../images/galerias/labs/imagenelec1.png"></img>
+										En la foto anterior se muestra un prototipo montado un protoboard en
+										el que se ve el micro controlador, con sus respectivas conexiones
+										básicas para su funcionamiento interconectado a un sensor de temperatura
+										y humedad ambiente integrado DHT11, cuya comunicación con el micro
+										controlador es atreves de un bus del tipo IC2.
+										<img alt="grafica" src="../images/galerias/labs/imagenelec2.png"></img>
+										En la foto superior se muestra el módulo de comunicación serie RS 232
+										montado con el circuito integrado MAX232, que es el que comunica al
+										micro controlador con la PC.
+									</p>
+
+									<h3>Programación en LabVIEW</h3>
+									<p>
+										<b>¿QUÉ ES LABVIEW?</b><br>
+										LabVIEW (Laboratory Virtual Instrumentation Engineering Workbench) es
+										un entorno de desarrollo y diseño de sistemas con un lenguaje visual
+										gráfico. LabVIEW utiliza el lenguaje G (lenguaje gráfico) que acelera
+										la productividad o desarrollo de programas para una mejor eficiencia
+										en el desarrollo de sistemas.<br>
+										Es un software creado por la empresa National Instruments en 1976 y
+										sacado al mercado en 1986.<br>
+										Al desarrollar un programa en LabVIEW, se crea un Instrumento Virtual o
+										VI que contiene la interfaz gráfica del programa y el diagrama de
+										bloques (código).<br>
+										Cuando un programa está terminado, el usuario final hace uso del panel
+										frontal, donde se encuentra todo lo necesario para controlar un sistema.
+										El diagrama de bloques es donde se encuentra el código del programa,
+										es donde el programador accede para modificar o mantener el programa.<br>
+										Una de las principales características de LabVIEW es que es relativamente
+										fácil de usar, no se requiere ser un experto en el área de programación
+										para poder hacer un programa que se pudiera considerar como complejo o
+										incluso imposible de hacer para algunos en otros lenguajes.<br>
+										Esto es lo que hace del Laboratorio Virtual de Instrumentación una
+										excelente opción para proyectos grandes donde se requieran conocimientos
+										de programación, electrónica, mecánica, robótica, etc.<br>
+										Este software es utilizado en empresas y agencias importantes como la NASA.<br>
+										“La potencia está en el software” Una frase muy célebre de LabVIEW,
+										que hace referencia a la capacidad e importancia que puede tener
+										un programa en un proyecto.
+									</p>
+									<p>
+										<b>Primeros pasos de la programación</b><br>
+										Se instaló una versión demo del software y a partir de ahí se comenzó
+										a configurar el bloque de comunicación vía puerto serie con la placa.
+										También se configuro el bloque para leer  registros del micro
+										controlador, en donde están almacenados los valores de temperatura y
+										humedad que a su vez son leídos y almacenados desde el sensor
+										utilizado.<br>
+										En la foto de abajo se ven la programación en bloques.
+										<img alt="grafica" src="../images/galerias/labs/imagenelec3.png"></img>
+										En la foto de abajo se muestra el panel de control donde se ven  visualizadores
+										analógicos para la humedad y temperatura, como así también un graficador
+										de una de estas variables.<br>
+										Se debe remarcar que estas variables son leídas y mostradas en tiempo real,
+										por el software atreves de la placa de adquisición de datos. Así también
+										dichas lecturas pueden ser grabadas en archivos tipo Excel entre otros formatos.<br>
+										<img alt="grafica" src="../images/galerias/labs/imagenelec4.png"></img>
+									</p>
+									<p>
+										<b>Diseño de la placa</b>
+										Para el diseño de la misma se utilizó el software de simulación y diseños PROTEUS.
+										El diagrama eléctrico de la interconexión entre el micro controlador y los
+										componentes necesarios para el funcionamiento del mismo se muestran en el diagrama
+										de abajo.
+										<div class="row">
+											<div class="col-md-5 col-md-offset-1">
+												<img alt="grafica" src="../images/galerias/labs/imagenelec5.png"></img>
+											</div>
+											<div class="col-md-5">
+												<img alt="grafica" src="../images/galerias/labs/imagenelec6.png"></img>
+											</div>
+										</div>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
 			</div>
 		</section>
 

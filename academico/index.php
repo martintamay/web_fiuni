@@ -92,12 +92,12 @@
 							</div>
 						</div>
 					</div>
-				</div>		
+				</div>
 			</section>
-			
+
 			<div class="container-fluid">
 				<!-- zona de carga -->
-				<iframe id="zona-carga" src="cpa.html" onload="redimensionarZonaCarga();"></iframe>
+				<iframe id="zona-carga" src="cpa.html" onload="redimensionarZonaCarga()" class="container-fluid"></iframe>
 			</div>
 
 			<!-- contact section -->
