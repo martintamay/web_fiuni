@@ -68,8 +68,8 @@
 							<li><a href="javascript:custom.js;" onclick='abrir("acreditaciones")'>Acreditaciones</a></li>
 							<li><a href="javascript:custom.js;" onclick='abrir("")'>Viviendas</a></li>
 							<li><a href="javascript:custom.js;" onclick='abrir("carreras")'>Carreras</a></li>
-							<li><a href="javascript:custom.js;" onclick='abrir("")'>Direccion</a></li>
-							<li><a href="javascript:custom.js;" onclick='abrir("")'>Inf. General</a></li>
+							<li><a href="javascript:custom.js;" onclick='abrir("direccion")'>Direccion</a></li>
+							<li><a href="javascript:custom.js;" onclick='abrir("infgeneral")'>Inf. General</a></li>
 							<li><a href="javascript:custom.js;" onclick='abrir("")'>Extensión</a></li>
 							<li><a href='javascript:custom.js;' onclick="openNav();" role="button">Menú <i class="fa fa-bars" alt="Menú" aria-hidden="true"></i></a></li>
 						</ul>

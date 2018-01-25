@@ -24,6 +24,10 @@ h1, h2, h3, h4 {
   letter-spacing: 2px;
 }
 
+h1, h2, h3 {
+  text-align: center;
+}
+
 img {
   max-width: 100%;
 }
@@ -87,7 +91,8 @@ hr {
 }
 
 #biblioteca,#noticias, #pag-noticias, #team,
-#imagenes, #pricing, #contacto, #articulo {
+#imagenes, #pricing, #contacto, #articulo, #departamento,
+#laboratorios {
   padding-top: 30px;
   padding-bottom: 100px;
 }
@@ -104,6 +109,10 @@ hr {
 @keyframes spin {
   0% {transform: rotate(0deg);}
   100% {transform: rotate(360deg);}
+}
+
+.container {
+  padding-bottom: 90px;
 }
 
 /* ==========================================================================
