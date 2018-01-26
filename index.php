@@ -78,10 +78,11 @@ http://www.tooplate.com/view/2075-digital-team
 		<section id="home">
 			<!-- noticias section -->
 			<div id="noticias" class="container">
-				<div class="container">
+				<div class="centrado-porcentual">
 					<div class="row">
 						<div class="col-md-12 col-sm-12 text-center">
 							<div class="section-title">
+								<img src="images/LogoT.png" class="img-portada">
 								<h1 class="bold">Últimas Noticias</h1>
 								<hr>
 							</div>
@@ -96,52 +97,53 @@ http://www.tooplate.com/view/2075-digital-team
 
 					  <!-- Wrapper for slides -->
 					  <div class="carousel-inner">
-					    <div class="item active">
-							<div class="panel panel-default">
-								<div class="panel-heading">
-									<h3>Especialización en dirección de empresas de ingeniería</h3>
-									<small>Publicado el <strong>17 de Octubre del 2017</strong></small>
-									<span class="label label-success">FIUNI</span>
-								</div>		
-								<div class="panel-body">
-									<div class="row">
-										<div class="col-md-12 col-sm-12">
-											<p>Titulados en carreras técnicas como Ingenieros, Arquitectos, 
-												Administradores de empresas, Directivos de empresas, Gerentes y profesionales en general con una experiencia profesional
-												garantizada y en cargos de responsabilidad ya sea en obras o emprendimientos de ingeniería.</p>
-											<a href="#" class="btn btn-danger float-right">Leer Mas</a>
+					    <div class="item active ">
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h3>Especialización en dirección de empresas de ingeniería</h3>
+										<small>Publicado el <strong>17 de Octubre del 2017</strong></small>
+										<span class="label label-success">FIUNI</span>
+									</div>
+									<div class="panel-body">
+										<div class="row">
+											<div class="col-md-12 col-sm-12">
+												<p>Titulados en carreras técnicas como Ingenieros, Arquitectos,
+													Administradores de empresas, Directivos de empresas, Gerentes y profesionales en general con una experiencia profesional
+													garantizada y en cargos de responsabilidad ya sea en obras o emprendimientos de ingeniería.</p>
+												<a href="#" class="btn btn-danger float-right">Leer Mas</a>
+											</div>
+											<!--div class="col-md-3 col-sm-12">
+												<img src="images/noticias/titulado.jpg" alt="noticia img">
+											</div-->
 										</div>
-										<!--div class="col-md-3 col-sm-12">
-											<img src="images/noticias/titulado.jpg" alt="noticia img">							
-										</div-->
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="item">
-							<div class="panel panel-default">
-								<div class="panel-heading">
-									<h3>Horario de Clases Semestrales 2017</h3>
-									<small>Publicado el <strong>19 de Octubre del 2017</strong></small>
-									<span class="label label-success">SECRETARIA</span>
-								</div>
-								<div class="panel-body">
-									<div class="row">
-										<div class="col-md-12 col-sm-12">
-											<p>Ya estan disponibles los horario de clases semestrales de todas las carreras de la FIUNI...</p>
-											<a href="#" class="btn btn-danger float-right">Leer Mas</a>
-										</div>
+							<div class="item">
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h3>Horario de Clases Semestrales 2017</h3>
+										<small>Publicado el <strong>19 de Octubre del 2017</strong></small>
+										<span class="label label-success">SECRETARIA</span>
 									</div>
-									<!--div class="col-md-3 col-sm-12">
-										<img src="images/LogoT.png" alt="noticia img">
-									</div-->
+									<div class="panel-body">
+										<div class="row">
+											<div class="col-md-12 col-sm-12">
+												<p>Ya estan disponibles los horario de clases semestrales de todas las carreras de la FIUNI...</p>
+												<a href="#" class="btn btn-danger float-right">Leer Mas</a>
+											</div>
+										</div>
+										<!--div class="col-md-3 col-sm-12">
+											<img src="images/LogoT.png" alt="noticia img">
+										</div-->
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			
+
 		</section>
 		<!-- work section -->
 		<section id="biblioteca">

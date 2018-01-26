@@ -352,6 +352,10 @@ home section
   color: #ffffff;
 }
 
+#home .img-portada {
+  max-width: 20vh;
+}
+
 /* ==========================================================================
 cabecera section
 ========================================================================== */
@@ -447,6 +451,18 @@ corousel
   background-color: black;
 }
 
+#homeCarousel .item {
+  width: 55vw;
+}
+
+.centrado-porcentual {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
 /* ==========================================================================
 about section
 ========================================================================== */
@@ -466,7 +482,9 @@ about section
 #noticias .panel-heading {
   -webkit-border-radius: 16px 16px 0 0;
 }
-
+#noticias .panel-footer {
+  -webkit-border-radius: 0 0 16px 16px;
+}
 #noticias .bold {
   color:white;
 }
