@@ -10,7 +10,7 @@
 	  <a href='".$path."materiales-pdf'>Materiales</a>
 	  <a href='".$path."academico'>Académico</a>
 	  <a href='".$path."administracion'>Administración</a>
-	  <a href='".$path."carreras'>Carreras</a>
+	  <a href='".$path."academico/#carreras'>Carreras</a>
 	  <a href='".$path."postgrados'>Postgrados</a>
 	  <a href='".$path."alumnos'>Alumnos</a>
 	  <a href='javascript:custom.js;' onclick='closeNav()'>Cerrar</a>
