@@ -65,7 +65,6 @@ http://www.tooplate.com/view/2075-digital-team
 				<div id="nav-superior" class="collapse navbar-collapse">
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="#home" class="smoothScroll">Inicio</a></li>
-						<li><a href="#noticias" class="smoothScroll">Noticias</a></li>
 						<li><a href="#biblioteca" class="smoothScroll">Bibliotecas</a></li>
 						<li><a href="http://www.fiuni.edu.py/moodle/login/index.php">Moodle</a><li>
 						<li><a href="#contacto" class="smoothScroll">Contacto</a></li>

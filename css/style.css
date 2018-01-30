@@ -259,7 +259,7 @@ navigation section
     margin-bottom: 0;
 }
 .custom-navbar img {
-	padding-top: 0px;
+	padding-top: 15px;
 	max-height: 45px;
   max-width: inherit;
 }
