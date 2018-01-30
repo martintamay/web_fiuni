@@ -456,13 +456,25 @@ corousel
 #homeCarousel .item {
   width: 55vw;
 }
-
 .centrado-porcentual {
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 45%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
+}
+@media (max-width: 600px) {
+  .centrado-porcentual {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+  }
+  #homeCarousel .item {
+    width: 95vw;
+    padding: 0;
+  }
 }
 
 /* ==========================================================================

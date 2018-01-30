@@ -1,4 +1,4 @@
-var pag = 0; 
+var pag = 0;
 
 var textoPag = "";
 
@@ -24,13 +24,13 @@ function mostrarNoticias(){
 	document.getElementById("noticias").innerHTML = textoPag;
 }
 
-function noticiasSig(){  
-	pag++;  
+function noticiasSig(){
+	pag++;
 	mostrarNoticias();
-} 
- 
-function noticiasAnt(){ 
-	pag--; 
+}
+
+function noticiasAnt(){
+	pag--;
 	mostrarNoticias();
 }
 
@@ -45,24 +45,29 @@ function generarNoticias(){
 }
 
 function formatearNoticia(noticia){
-	var texto = '<div class="row panel panel-default"> '	
-	texto += '  <div class="row"> '
-	texto += '    <div class="col-md-9 col-sm-12"> '
-	texto += '      <h3>'+noticia.titulo+'</h3> '
-	texto += '      <small>Publicado el <strong>'+noticia.fecha+'</strong></small> '
-	texto += '      <p>'+noticia.contenido+'</p> ';
+	var texto = '<div class="row panel panel-default"> ';
+	texto += '	<div class="panel-heading">';
+	texto += '		<h3>'+noticia.titulo+'</h3>';
+	texto += '		<small>Publicado el <strong>'+noticia.fecha+'</strong></small>';
+	texto += '		<span class="label label-success">FIUNI</span>';
+	texto += '	</div>';
+	texto += '	<div class="panel-body">';
+	texto += '  	<div class="row"> ';
+	texto += '    	<div class="col-md-9 col-sm-12"> ';
+	texto += '      	<p>'+noticia.contenido+'</p> ';
 	if (noticia.hasOwnProperty("botonUrl")) {
-		texto += '       <a href="'+noticia.botonUrl+'" class="btn btn-danger">'+noticia.botonTexto+'</a>';
-	}			 
-	texto += '    </div> '
-	texto += '    <div class="col-md-3 col-sm-12"> '	
+		texto += '       	<a href="'+noticia.botonUrl+'" class="btn btn-danger">'+noticia.botonTexto+'</a>';
+	}
+	texto += '    	</div> ';
+	texto += '    	<div class="col-md-3 col-sm-12"> ';
 	if (noticia.hasOwnProperty("imagen")) {
-		texto += '       <img src="'+noticia.imagen+'" alt="noticia img"> '
-	}else{		
-		texto += '       <img src="../images/noticias/LogoT.png" alt="noticia img"> '
-	}	 					
-	texto += '    </div> '
-	texto += '  </div> '
+		texto += '       	<img src="'+noticia.imagen+'" alt="noticia img"> ';
+	}else{
+		texto += '       	<img src="../images/noticias/LogoT.png" alt="noticia img"> ';
+	}
+	texto += '    	</div> ';
+	texto += '  	</div> ';
+	texto += '	</div>';
 	texto += '</div>';
 	return texto;
 }
@@ -76,7 +81,7 @@ function cargarArrayNoticias(data){
 		var campos = todasLasNoticias[cNot].split(';');
 		var noticia = null;
 		if (campos.length == 3 || campos[3]=="") {
-			//sin imagen ni boton	
+			//sin imagen ni boton
 			var noticia = {
 					titulo: campos[0],
 					fecha: campos[1],
