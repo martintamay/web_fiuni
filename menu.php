@@ -11,8 +11,9 @@
 	  <a href='".$path."academico'>Académico</a>
 	  <a href='".$path."administracion'>Administración</a>
 	  <a href='".$path."academico/#carreras'>Carreras</a>
-	  <a href='".$path."postgrados'>Postgrados</a>
+
 	  <a href='javascript:custom.js;' onclick='closeNav()'>Cerrar</a>
 	</div>";
 //<a href='".$path."alumnos'>Alumnos</a> retirado temporalmente
+//<a href='".$path."postgrados'>Postgrados</a>
 ?>
